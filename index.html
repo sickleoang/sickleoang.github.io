@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Mat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" async></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#materi">Materi</a></li>
+          <li><a href="#contoh">Contoh</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="home">
+      <div class="container">
+        <header>
+          <h1>Statistika data kelompok</h1>
+          <p>materi kelas 10</p>
+        </header>
+        <img>
+      </div>
+    </div>
+
+    <div id="contentTable">
+      <div class="container">
+        <h1>Daftar materi</h1>
+        <div class="daftarMateri">
+          <ul>
+            <li><a href="#pengertian">Pengertian</a></li>
+            <li><a href="#rumusStatistic">Ukuran pemusatan data</a></li>
+            <li><a href="#komponenTabel">Komponen utama tabel data kelompok</a></li>
+            <li><a href="#visualData">Visualisasi data (grafik)</a></li>
+            <li><a href="#contoh">Contoh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="materi">
+      <div id="pengertian">
+        <div class="container">
+          <h2>Pengertian</h2>
+          <p>Statistika data kelompok adalah metode analisis data yang mengelompokkan data individual ke dalam interval kelas tertentu 
+            (misalnya, 150-155 cm) dengan frekuensi masing-masing, digunakan untuk menyajikan data yang sangat banyak agar lebih ringkas, 
+            mudah diolah, dan dianalisis, termasuk menghitung ukuran pemusatan (mean, median, modus) dan penyebaran (simpangan baku) 
+            dengan rumus khusus yang mempertimbangkan interval dan frekuensi kelas.</p>
+        </div>
+      </div>
+
+      <div id="rumusStatistic">
+        <div class="container">
+          <h2>Ukuran pemusatan data</h2>
+          <div class="rumusStatistika">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Comparison_mean_median_mode.svg/1280px-Comparison_mean_median_mode.svg.png" alt="perbedaan Mean, Median, dan Modus">
+
+            <div class="rumusMean">
+              <h3>Mean</h3>
+              <p>Rata-rata dari set data bisa dicari dengan menjumlahkan semua angka dalam set data dan membaginya dengan jumlah data dalam set. 
+                Menggunakan titik tengah (\(x_{i}\)) sebagai wakil setiap kelas, rumus : <div class="equations" >\(\bar{x} = \frac {\sum{f_{i}} \cdot x_{i}}{\sum{f_i}}\)</div></p>
+            </div>
+
+            <div class="rumusMedian">
+              <h3>Median</h3>
+              <p>Nilai yang ada di tengah tengah setelah data diurutkan dari yang terkecil. Memerlukan frekuensi kumulatif (\(F_{k}\))</p>
+            </div>
+
+            <div class="rumusModus">
+              <h3>Modus</h3>
+              <p>Nilai yang paling sering muncul dalam suatu data statistika. Dilihat dari kelas dengan frekuensi (\(f\)) tertinggi</p>
+            </div>
+
+          </div>  
+
+        <div>
+      </div>
+
+      <div id="komponenTabel">
+        <div class="container">
+          <h2>Komponen utama tabel data kelompok</h2>
+          <ul>
+            <li>Interval kelas: Jangkauan kelompok</li>
+            <li>Batas bawah dan atas: Nilai minimum dan maximum</li>
+            <li>Tepi bawah (\(T_{b}\)): Nilai batas bawah interval kelas dikurangi 0,5 </li>
+            <li>Titik tengah (\(x_{i}\)): Nilai tengah kelas</li>
+            <li>Panjang kelas (\(p\)): Jarak antar tepi kelas</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="visualData">
+        <div class="container">
+          <h2>Visualisasi data (grafik)</h2>
+          <div class="VisualGrafik">
+            <div class="grafikGambar">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Black_cherry_tree_histogram.svg/1280px-Black_cherry_tree_histogram.svg.png" alt="Histogram">
+            </div>
+            <div class="grafikIsi">
+              <h3>Histogram</h3>
+              <p>Grafik batang yang rapat satu sama lain</p>
+            </div>
+          </div>
+
+          <div class="VisualGrafik">
+            <div class="grafikGambar">
+              <img src="https://nidannss.wordpress.com/wp-content/uploads/2013/09/polf.png" alt="Poligon">
+            </div>
+            <div class="grafikIsi">
+              <h3>Poligon</h3>
+              <p>Garis yang menghubungkan titik tengah batang histogram</p>
+            </div>
+          </div>
+
+          <div class="VisualGrafik">
+            <div class="grafikGambar">
+              <img src="https://imgix3.ruangguru.com/assets/miscellaneous/png_kafo0u_8923.png" alt="Ogive">
+            </div>
+            <div class="grafikIsi">
+              <h3>Ogive</h3>
+              <p>Grafik garis yang menunjukkan frekuensi kumulatif (naik atau turun)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="contoh">
+      <div class="container">
+        <h2>Contoh</h2>
+        <div class="contohSoal">
+          <table>
+            <tr>
+              <th>Nilai</th>
+              <th>Frekuensi</th>
+            </tr>
+            <tr>
+              <td>61-70</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>71-80</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>81-90</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>90-100</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>40</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contohJawaban">
+          <div class="jawabMean">
+            <h2>Mean</h2>
+            <p>Cari titik tengah (\(x_{i}\)) setiap kelas, kalikan dengan frekuensi, lalu bagi dengan total frekuensi</p>
+            <p>rumus : <div class="equations">\(\bar{x} = \frac {\sum{f_{i}} \cdot x_{i}}{\sum{f_i}} = \frac {3340}{40} = 83.5\)</div> </p>
+          </div>
+          <div class="jawabMedian">
+            <h2>Median</h2>
+            <p>Cari letak data tengah</p>
+            <ul>
+              <li>Letak median: \(frac{1}{2} \times 40 = 20\). Data ke-20 ada di kelas 81 - 90</li>
+              <li>Tepi bawah (\(T_{b}\)): \(81 - 0.5 = 80.5\)</li>
+              <li>Frekuensi kumulatif sebelum nilai kelas median (\(F)\): 3 + 12 = 15</li>
+              <li>Frekuensi kelas median (\(f_{m})\): 15</li>
+              <li>Panjang kelas (\(p\)): 10</li>
+            </ul>
+            <p>Median = <div class="equations">\(T_{b} + p (\frac{\frac{n}{2} + F}{f_{m}})\)</div></p>
+            <p><div class="equations">\(80.5 + 10 (\frac{20 + 15}{15})\)</div></p>
+            <p><div class="equations">\(80.5 + 10 (\frac{5}{15})\)</div></p>
+            <p><div class="equations">\(80.5 + 3\)</div></p>
+            <p><div class="equations">\(83.5\)</div></p>
+          </div>
+          <div class="jawabModus">
+            <h2>Modus</h2>
+            <p>Cari nilai dengan frekuensi tertinggi</p>
+            <ul>
+              <li>Nilai kelas terbanyak: 81 - 90</li>
+              <li>Tepi bawah (\(T_{b}\)): \(81 - 0.5 = 80.5\)</li>
+              <li>Selisih frekuensi dengan nilai kelas sebelumnya (\(d_{1}\)): 15 - 12 = 3</li>
+              <li>Selisih frekuensi dengan nilai kelas sesudahnya (\(d_{2}\)): 15 - 10 = 5</li>
+              <li>Panjang kelas (\(p\)): 10</li>
+            </ul>
+            <p>Modus = <div class="equations" >\(T_{b} + p (\frac{d_{1}}{d_{1} + d_{2}})\)</div></p>
+            <p><div class="equations" >\(80.5 + 10 (\frac{3}{3 + 5})\)</div></p>
+            <p><div class="equations" >\(80.5 + 10 (0.375)\)</div></p>
+            <p><div class="equations" >\(80.5 + 3.75\)</div></p>
+            <p><div class="equations" >84.25</div></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body></html>
